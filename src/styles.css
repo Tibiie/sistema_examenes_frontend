@@ -12,3 +12,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     max-width: 500px;
     margin: 0 auto; 
 }
+
+.ml70{
+    margin-left: 70px !important; 
+}
