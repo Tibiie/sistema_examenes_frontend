@@ -8,8 +8,10 @@ import {MatButtonModule} from '@angular/material/button';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SignupComponent } from './pages/signup/signup.component';
 import { LoginComponent } from './pages/login/login.component';
-import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatSelectModule} from '@angular/material/select';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
@@ -24,6 +26,12 @@ import { ProfileComponent } from './pages/profile/profile.component';
 import {MatListModule} from '@angular/material/list';
 import { SidebarComponent } from './pages/admin/sidebar/sidebar.component';
 import { WelcomeComponent } from './pages/admin/welcome/welcome.component';
+import { ViewCategoriasComponent } from './pages/admin/view-categorias/view-categorias.component';
+import { AddCategoriaComponent } from './pages/admin/add.categoria/add.categoria.component';
+import { ViewExamenesComponent } from './pages/admin/view-examenes/view-examenes.component';
+import { AddExamenComponent } from './pages/admin/add-examen/add-examen.component';
+import { ActualizarExamenComponent } from './pages/admin/actualizar-examen/actualizar-examen.component';
+import { ViewExamenPreguntasComponent } from './pages/admin/view-examen-preguntas/view-examen-preguntas.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +44,13 @@ import { WelcomeComponent } from './pages/admin/welcome/welcome.component';
     UserDashboardComponent,
     ProfileComponent,
     SidebarComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    ViewCategoriasComponent,
+    AddCategoriaComponent,
+    ViewExamenesComponent,
+    AddExamenComponent,
+    ActualizarExamenComponent,
+    ViewExamenPreguntasComponent
   ],
   imports: [
     BrowserModule,
@@ -45,6 +59,8 @@ import { WelcomeComponent } from './pages/admin/welcome/welcome.component';
     MatButtonModule,
     MatFormFieldModule,
     MatInputModule,
+    MatSlideToggleModule,
+    MatSelectModule,
     HttpClientModule,
     FormsModule,
     MatSnackBarModule,
