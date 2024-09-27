@@ -32,6 +32,12 @@ import { ViewExamenesComponent } from './pages/admin/view-examenes/view-examenes
 import { AddExamenComponent } from './pages/admin/add-examen/add-examen.component';
 import { ActualizarExamenComponent } from './pages/admin/actualizar-examen/actualizar-examen.component';
 import { ViewExamenPreguntasComponent } from './pages/admin/view-examen-preguntas/view-examen-preguntas.component';
+import { AddPreguntaComponent } from './pages/admin/add-pregunta/add-pregunta.component';
+import { ActualizarPreguntaComponent } from './pages/admin/actualizar-pregunta/actualizar-pregunta.component';
+import { SidebarComponent as UserSidebar} from './pages/user/sidebar/sidebar.component';
+import { LoadExamenComponent } from './pages/user/load-examen/load-examen.component';
+import { InstruccionesComponent } from './pages/user/instrucciones/instrucciones.component';
+import { StartComponent } from './pages/user/start/start.component'; 
 
 @NgModule({
   declarations: [
@@ -50,7 +56,13 @@ import { ViewExamenPreguntasComponent } from './pages/admin/view-examen-pregunta
     ViewExamenesComponent,
     AddExamenComponent,
     ActualizarExamenComponent,
-    ViewExamenPreguntasComponent
+    ViewExamenPreguntasComponent,
+    AddPreguntaComponent,
+    ActualizarPreguntaComponent,
+    UserSidebar,
+    LoadExamenComponent,
+    InstruccionesComponent,
+    StartComponent
   ],
   imports: [
     BrowserModule,

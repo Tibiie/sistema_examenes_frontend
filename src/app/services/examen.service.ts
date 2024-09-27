@@ -28,5 +28,17 @@ export class ExamenService {
   public actualizarExamen(examen:any){
     return this.http.put(`${baserUrl}/api/v1/examen/actualizarExamen`, examen);
   }
+
+  public listarExamenesDeUnaCategoria(categoriaId:any){
+    return this.http.get(`${baserUrl}/api/v1/examen/examenesPorCategoria/${categoriaId}`);
+  }
+
+  public obtenerExamenesActivos(){
+    return this.http.get(`${baserUrl}/api/v1/examen/activo`);
+  }
+
+  public obtenerExamenesActivosDeUnaCategoria(categoriaId:any){
+    return this.http.get(`${baserUrl}/api/v1/examen/categoria/activo/${categoriaId}`);
+  }
 } 
 
